@@ -1,0 +1,9 @@
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ClassLib\bin\Debug\netstandard2.0\CSharpWithVSCode.ClassLib.deps.json
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ClassLib\bin\Debug\netstandard2.0\CSharpWithVSCode.ClassLib.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ClassLib\bin\Debug\netstandard2.0\CSharpWithVSCode.ClassLib.pdb
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ClassLib\obj\Debug\netstandard2.0\CSharpWithVSCode.ClassLib.csprojAssemblyReference.cache
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ClassLib\obj\Debug\netstandard2.0\CSharpWithVSCode.ClassLib.csproj.CoreCompileInputs.cache
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ClassLib\obj\Debug\netstandard2.0\CSharpWithVSCode.ClassLib.AssemblyInfoInputs.cache
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ClassLib\obj\Debug\netstandard2.0\CSharpWithVSCode.ClassLib.AssemblyInfo.cs
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ClassLib\obj\Debug\netstandard2.0\CSharpWithVSCode.ClassLib.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ClassLib\obj\Debug\netstandard2.0\CSharpWithVSCode.ClassLib.pdb

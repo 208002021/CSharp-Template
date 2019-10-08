@@ -1,0 +1,29 @@
+{
+            "version": "2.0.0",
+            "tasks": [
+                {
+                    "label": "build",
+                    "command": "dotnet",
+                    "type": "process",
+                    "args": [
+                        "build",
+                        "${workspaceRoot}/src/CSharpWithVSCode.ConsoleApp/CSharpWithVSCode.ConsoleApp.csproj"
+                    ],
+                    "problemMatcher": "$msCompile"
+                },
+                {
+                    "label": "test",
+                    "command": "dotnet",
+                    "type": "process",
+                    "args": [
+                        "test",
+                        "${workspaceRoot}/test/CSharpWithVSCode.Tests/CSharpWithVSCode.Tests.csproj"
+                    ],
+                    "problemMatcher": "$msCompile",
+                    "group": {
+                        "kind": "test",
+                        "isDefault": true
+                    }
+                }
+            ]
+        }

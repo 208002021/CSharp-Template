@@ -1,0 +1,17 @@
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\bin\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.deps.json
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\bin\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.runtimeconfig.json
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\bin\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.runtimeconfig.dev.json
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\bin\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\bin\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.pdb
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\bin\Debug\netcoreapp2.2\CSharpWithVSCode.ClassLib.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\bin\Debug\netcoreapp2.2\CSharpWithVSCode.ClassLib.pdb
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\obj\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.csprojAssemblyReference.cache
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\obj\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.csproj.CoreCompileInputs.cache
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\obj\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.AssemblyInfoInputs.cache
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\obj\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.AssemblyInfo.cs
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\obj\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.csproj.CopyComplete
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\obj\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\test\CSharpWithVSCode.Tests\obj\Debug\netcoreapp2.2\CSharpWithVSCode.Tests.pdb

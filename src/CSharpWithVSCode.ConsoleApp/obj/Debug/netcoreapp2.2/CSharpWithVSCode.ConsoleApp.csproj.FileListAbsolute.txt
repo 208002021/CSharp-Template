@@ -1,0 +1,14 @@
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\bin\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.deps.json
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\bin\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.runtimeconfig.json
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\bin\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.runtimeconfig.dev.json
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\bin\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\bin\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.pdb
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\bin\Debug\netcoreapp2.2\CSharpWithVSCode.ClassLib.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\bin\Debug\netcoreapp2.2\CSharpWithVSCode.ClassLib.pdb
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\obj\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\obj\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\obj\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\obj\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.AssemblyInfo.cs
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\obj\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.csproj.CopyComplete
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\obj\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.dll
+C:\Users\208002021\VSCode\Workspaces\CSharpWithVSCode\src\CSharpWithVSCode.ConsoleApp\obj\Debug\netcoreapp2.2\CSharpWithVSCode.ConsoleApp.pdb
