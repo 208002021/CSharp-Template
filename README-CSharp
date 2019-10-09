@@ -8,34 +8,37 @@ I’ve put up a reference implementation in GitHub, that extends this tutorial a
 Before I get into the details, it is worth saying that Visual Studio Code holds your hand a lot less than ‘full’ Visual Studio. This is a good thing. Using Code and interacting with the command line forces you to really understand what is going on under the hood, and brings you much closer to the actual development. I suspect that once you get over the initial ‘hump’, you’ll quickly come to prefer developing C# with Code over the full version of Studio.
 From now on I will refer to ‘Visual Studio Code’ as ‘Code’, and the full version of Studio as ‘Visual Studio’
 Prerequisites
+
 You’ll need to install Code, and the .NET Core SDK for this tutorial.
 If you don’t already have them installed, use Chocolatey to install them both with the following commands:
-choco install visualstudiocode -Y
-choco install dotnetcore-sdk -Y
+    choco install visualstudiocode -Y
+    choco install dotnetcore-sdk -Y
+
 Setting up Visual Studio Code
 Out of the box, Code looks a bit like Notepad with a dark theme. Remember, Code is not a ‘.NET IDE’, it is an editor that can be used for any language you care to use. Accordingly, Microsoft do not pre-package it with .NET tooling, you need to configure it yourself with a few simple extensions.
 Follow the 1–2–3 steps from the screen captures below:
-Install the C# extension:
-
-Install the NuGet extension
-
-Install the Material Icon Theme Extension
+    Install the C# extension:
+    Install the NuGet extension
+    Install the Material Icon Theme Extension
 
 Setting up the C# projects
 It is very common when using Visual Studio to configure a solution file which references multiple interlinked project files. This can be achieved in Code with a few commands.
 Throughout this example, PowerShell is used, and the commands are set up such that the directory always returns to the project root directory when an individual operation has completed. This means that you can follow along with this tutorial by simply copy / pasting the commands into PowerShell. However, you’re not familiar with using PowerShell, or CLIs in general, it is worth taking some time to understand the commands rather than just copy/pasting them. Non windows users can probably translate these easily enough to their preferred shell.
+
 Getting started
 The following steps need to be achieved to get started:
-A new folder is created to house the project.
-A sub folder for source files (named ‘src’) is created.
-A sub folder for unit testing files is created.
-A dot net solution file is created
+    A new folder is created to house the project.
+    A sub folder for source files (named ‘src’) is created.
+    A sub folder for unit testing files is created.
+    A dot net solution file is created
+
 Choose which folder you want to be the root for this project, and navigate there with PowerShell. Then execute:
-cd (mkdir CSharpWithVSCode);
-mkdir src;
-mkdir test;
-dotnet new sln;
-code .
+    cd (mkdir CSharpWithVSCode);
+    mkdir src;
+    mkdir test;
+    dotnet new sln;
+    code .
+
 If this is the first time that the .NET Core SDK has been used (via the ‘dotnet’ command), there may be a minute or so of setup work carried out automatically.
 The final command in the chain is “Code .”, which opens an instance of Visual Studio Code in the folder from which the command is executed. Running the above should result in some folders being created, a solution file being added, and finally Visual Studio Code being launched. Code should look as shown:
 
@@ -43,27 +46,33 @@ Create the C# project files, and add the references
 The next step is to create two C# projects, link them with a reference, and add them to the solution file. In this example, we’ll set up a class library and a console application. This is a fairly typical starting point for a C# project.
 To do this use either PowerShell directly, or access the Console in Code by hitting Ctrl+’ or Ctrl+`.
 Create the Console project first with:
-cd src; 
-cd (mkdir CSharpWithVSCode.ConsoleApp);
-dotnet new console;
-cd..; cd..
+    cd src; 
+    cd (mkdir CSharpWithVSCode.ConsoleApp);
+    dotnet new console;
+    cd..; cd..
+
 Now create the Class Library project with:
-cd src;
-cd (mkdir CSharpWithVSCode.ClassLib);
-dotnet new classlib;
-cd..; cd..
+    cd src;
+    cd (mkdir CSharpWithVSCode.ClassLib);
+    dotnet new classlib;
+    cd..; cd..
+
 The files should look like this:
 
 Solution files are ubiquitous in Visual Studio, but you can get away without them in Code. However, there is a big benefit to using a solution file. You can issue commands to the solution file, and it will then pass them on to each project that it references. This is fairly trivial with only two projects, but a significant time saving when the number of linked projects starts to grow.
 The solution file should be made to reference the projects with the following commands:
-dotnet sln add .\src\CSharpWithVSCode.ConsoleApp\CSharpWithVSCode.ConsoleApp.csproj
+    dotnet sln add .\src\CSharpWithVSCode.ConsoleApp\CSharpWithVSCode.ConsoleApp.csproj
+
 Then:
-dotnet sln add .\src\CSharpWithVSCode.ClassLib\CSharpWithVSCode.ClassLib.csproj
+    dotnet sln add .\src\CSharpWithVSCode.ClassLib\CSharpWithVSCode.ClassLib.csproj
+
 Finally, a reference to the class library should be added to the console project, so that the console can execute functions from the class library.
+
 Use the following command:
-cd .\src\CSharpWithVSCode.ConsoleApp\;
-dotnet add reference ..\CSharpWithVSCode.ClassLib\CSharpWithVSCode.ClassLib.csproj;
-cd..; cd..
+    cd .\src\CSharpWithVSCode.ConsoleApp\;
+    dotnet add reference ..\CSharpWithVSCode.ClassLib\CSharpWithVSCode.ClassLib.csproj;
+    cd..; cd..
+
 Run the Project
 The next stage involves a number of automatic steps which Visual Studio Code will execute for you when you first open a C# file ( with extension ‘.cs’).
 To start the process, simply click to open ‘Program.cs’.
@@ -80,11 +89,12 @@ Note, Omnisharp sometimes plays hard to get at this stage. If the above does not
 
 When the dialogue appears, as indicated, click ‘Yes’.
 This will:
-Add a vscode folder
-Add a file named ‘launch.json’ in the vscode folder
-Add a file named ‘tasks.json’ in the vscode folder
-Add a ‘bin’ and ‘obj’ file under both the console and the classlib projects.
-Pull in the project dependencies.
+    Add a vscode folder
+    Add a file named ‘launch.json’ in the vscode folder
+    Add a file named ‘tasks.json’ in the vscode folder
+    Add a ‘bin’ and ‘obj’ file under both the console and the classlib projects.
+    Pull in the project dependencies.
+
 The project should look like this:
 
 Assuming that all of the above is correct, then the solution is ready to be run for the first time.
@@ -94,29 +104,36 @@ Note, you may have to click on the ‘Debug Console’ tab manually to see this 
 Congratulations! You have built yet another a ‘Hello World’ application!
 From here, there are not that many differences from developing with Visual Studio. If you would like to see this example extended a little more, I’ve fleshed it out a bit and put the code on GitHub.
 At this stage, you’ve got the bones of a desktop application. The next step is to add the ability to write some unit tests.
+
 Unit Testing
 It is essential that any code you write can be unit tested. Unit testing is well supported in Visual Studio Code, and is straightforward after following a few configuration steps.
+
 Create and Configure the unit test project
 Start by creating a test project with:
-cd test;
-cd (mkdir "CSharpWithVSCode.Tests");
-dotnet new xunit;
-cd..; cd..
+    cd test;
+    cd (mkdir "CSharpWithVSCode.Tests");
+    dotnet new xunit;
+    cd..; cd..
+
 Add a reference to the class lib project with:
-cd .\test\CSharpWithVSCode.Tests;
-dotnet add reference ..\..\src\CSharpWithVSCode.ClassLib\CSharpWithVSCode.ClassLib.csproj;
-cd..; cd..
+    cd .\test\CSharpWithVSCode.Tests;
+    dotnet add reference ..\..\src\CSharpWithVSCode.ClassLib\CSharpWithVSCode.ClassLib.csproj;
+    cd..; cd..
+
 The test project should also be added to the solution:
-dotnet sln add .\test\CSharpWithVSCode.Tests\CSharpWithVSCode.Tests.csproj
+    dotnet sln add .\test\CSharpWithVSCode.Tests\CSharpWithVSCode.Tests.csproj
+
 Finally, the test project needs to be ‘restored’. This is the method whereby Code downloads any required dependencies and adds the ‘bin’ and ‘obj’ folders to the directory. Note that this was done automatically for the console app and the class lib the first time that program.cs was opened.
 Restoring can either be done by navigating to the directory containing the unit test project, or by doing this through the solution file. It should be done in the same folder level as the solution project by executing:
 dotnet restore
 This will add an ‘obj’ folder to the testing project, similar to the main source projects. Note that because this is done at the solution folder level, all of the projcts referenced by the solution will be restored.
+
 Build and Run the Test Project
 Next build and execute the test project with:
-cd .\test\CSharpWithVSCode.Tests\;
-dotnet test;
-cd..; cd..
+    cd .\test\CSharpWithVSCode.Tests\;
+    dotnet test;
+    cd..; cd..
+
 This should result in the following output showing that the default test has passed:
 
 An additional nuance with v2.x
@@ -151,11 +168,8 @@ Click “Ctrl + Shift + T”, then Enter to add the binding.
 
 The test task can now be accessed by hitting Ctrl+Shift+t, rather than going through the menu.
 Note, that any key combination can be used — this is just my preference.
+
 Conclusion
 There is obviously a little bit more setup and configuration than is required with Visual Studio, but I have quickly come to prefer this way of working. In my opinion, doing all the setup through the command line significantly aids the understanding of what exactly is happening at each step, and so makes identifying problems later much easier.
 In addition, The cross platform nature of this is a fantastic boost to any collaborative project.
 I’ll admit that moving from Visual Studio to Code was a slightly jarring experience for me, with a few hurdles to overcome before I really started seeing the benefit. I hope that this tutorial has made it a little bit easier for you to make the transition!
-If there are any issues with the above, please let me know in the comments.
-Andy
-If you found this article interesting, please give it some claps and follow me on Medium to see more content like this.
-I am currently working on EdgeFund, an open-source platform which offers a decentralised shared bankroll on the Blockchain. To learn more about EdgeFund, please visit our website or join our telegram group to chat to the team and be sure to follow us on Twitter!
